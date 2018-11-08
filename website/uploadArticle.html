@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文章|李瑞崧的个人网站</title>
+    <link href="img/pig.ico" rel="shortcut icon">
+    <script src="JS/uploadArticle.js">
+
+    </script>
+    <script src="Bomb/bmob-min.js"></script>
+    <link rel="stylesheet" href="CSS/upArticle.css">
+
+</head>
+<body>
+<input type="text" id="title"><p>&nbsp;*请输入文章标题</p>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select id="authority">
+    <option>0-普通文章</option>
+    <option>1-一级权限</option>
+    <option>2-私密文章</option>
+</select><p>&nbsp;*请选择阅读权限</p>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select id="type">
+<option value="new">新建类别</option>
+</select><p>&nbsp;*请选择文章类别</p>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text"id="newType" placeholder="或新建分类">
+
+<!-- 加载编辑器的容器 -->
+<script id="container" name="content" type="text/plain">
+    </script>
+<!-- 配置文件 -->
+<script type="text/javascript" src="utf8-php/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="utf8-php/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container',{ initialFrameHeight:600
+    });
+
+</script>
+<input type="text" placeholder="请输入一段简介" id="intro"> *文章简介
+<input type="button" id="upload" value="上传文章">
+</body>
+</html>

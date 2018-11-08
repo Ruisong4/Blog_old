@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="baidu-site-verification" content="Xh59U1EFqC" />
+    <title>Ruisong's website</title>
+    <link href="img/pig.ico" rel="shortcut icon">
+    <script src="Bomb/bmob-min.js"></script>
+    <link rel="stylesheet" href="CSS/Home.css">
+</head>
+<script>
+    var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+
+    var browser = navigator.userAgent.toLowerCase();
+
+    var isMobile = false;
+
+    for (var i = 0; i < mobileAgent.length; i++) {
+        if (browser.indexOf(mobileAgent[i]) != -1) {
+            isMobile = true;
+            //alert(mobileAgent[i]);
+            window.open("http://m.ruisong1998.com","_self");
+            break;
+        }
+    }
+</script>
+<script>
+    window.onload = function () {
+        Bmob.initialize("ed4aedea541215a93b483fbe0e9c8bc3", "bcfdb82a2462b1e83a535b77ca8104ff");
+
+
+
+    };
+    function notYet() {
+        alert("个人简介正在装修中")
+    }
+</script>
+<body>
+<script>
+
+</script>
+<div id="title">
+<h1>李瑞崧的个人网站</h1>
+<h3>Ruisong Li's Personal Website</h3>
+<a href="ArticleList.html">My Blog</a>
+<a href="album.html">Photo Gallary</a>
+<a href="AboutMe-EN.html">About Me </a>
+<a href="mailto:ruisong_li@163.com">Contact Me</a>
+</div>
+</body>
+</html>

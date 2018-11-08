@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片上传|李瑞崧的个人网站</title>
+    <link href="img/pig.ico" rel="shortcut icon">
+    <script src="Bomb/bmob-min.js"></script>
+    <script src="JS/uploadPhoto.js"></script>
+    <link rel="stylesheet" href="CSS/uploadPhoto.css">
+    <script src="JS/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <h1>相册图片上传器</h1>
+    <input type="file" id="profilePhotoFileUpload" multiple="multiple" accept="image/jpeg,image/png,image/jpg">
+    <input type="button" id="submit" value="submit">
+    <div id="choices">
+        <input type="radio" name="a" id="one" checked="checked" value="1">为所有照片使用统一描述<br/>
+        <input type="radio" name="a" id="multiple" value="2">为每个照片添加不同描述
+    </div>
+    <div id="sameDes">
+        <input type="text" id="des" placeholder="请输入图片描述">
+    </div>
+    <div id="mutiDes">
+
+    </div>
+    <div id="typeChoice">
+        <select id="type">
+            <option value="new">新建类别</option>
+        </select><p>&nbsp;*请选择文章类别</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="newType" placeholder="或新建分类">
+    </div>
+</div>
+
+</body>
+</html>

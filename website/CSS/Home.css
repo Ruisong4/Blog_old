@@ -1,0 +1,33 @@
+html,body,div{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: url("../img/background.jpg")  no-repeat;
+}
+
+html{
+    max-height:1080px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#title{
+    margin:200px auto;
+    height:100px;
+    width:300px;
+}
+
+h1,h2,h3{
+    color: #FFF;
+    margin:0 auto;
+}
+
+a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin:15px auto;
+    display: block;
+}

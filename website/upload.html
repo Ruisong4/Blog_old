@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台入口|李瑞崧的个人网站</title>
+    <link href="img/pig.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="CSS/upload.css">
+    <script src="Bomb/bmob-min.js"></script>
+    <script>
+        window.onload = function () {
+            Bmob.initialize("ed4aedea541215a93b483fbe0e9c8bc3", "bcfdb82a2462b1e83a535b77ca8104ff");
+            if(Bmob.User.current()){
+                if(Bmob.User.current().get("authority")<100)window.open("login.html","_self");else{
+                        document.getElementById("article").onclick = function () {
+                            window.open("uploadArticle.html","_self")
+                        };
+                        document.getElementById("photos").onclick = function () {
+                            window.open("uploadPhoto.html","_self")
+                        };
+                }}
+            else(window.open("login.html","_self"));  //检查是否有进入后台得到权限  如果没有相应权限就回到登录页
+
+        }
+    </script>
+</head>
+<body>
+   <h1>李瑞崧的个人网站后台入口</h1>
+   <div id="container">
+       <div id="article" class="btn">上传文章</div>
+       <div id="photos" class="btn">上传图片</div>
+   </div>
+</body>
+</html>

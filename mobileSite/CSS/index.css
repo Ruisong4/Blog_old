@@ -1,0 +1,22 @@
+div,body,a,h1,li{
+    margin:0;
+    padding: 0;
+}
+
+html, body {
+     height: 100%;
+    text-align: center;
+    background: #f0f0f0;
+ }
+
+a,h1,div,li{
+    display: block;
+}
+
+#main{
+    margin:30px auto;
+}
+
+#main a{
+    margin-top: 15px;
+}

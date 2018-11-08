@@ -1,0 +1,251 @@
+div,body,li,ul,h2,h3,strong,p{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: #f0f0f0;
+    overflow-x: hidden;
+}
+
+#bannerTop u{
+    display: inline-block;
+    color: #b94a48;
+}
+
+#bannerTop u:hover{
+    display: inline-block;
+    cursor:pointer
+}
+
+#bannerTop{
+    height:80px;
+    white-space: nowrap;
+    width:100%;
+    background: white;
+}
+
+#bannerTop-left{
+    display: inline-block;
+    margin-left: 15%;
+    height: 100px;
+    width:300px;
+}
+
+#bannerTop-right{
+    height: 80px;
+    display: inline-block;
+    margin-left: 40%;
+}
+
+#websiteTitle{
+    height: 40px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+#saying{
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+#bannerSecond{
+    white-space: nowrap;
+    height:40px;
+    width:100%;
+    background: lightskyblue;
+    padding-left: 350px;
+    line-height: 40px;
+    font-size: x-small;
+}
+
+#date{
+    height: 30px;
+}
+
+#welcome{
+    height:50px;
+    width:inherit;
+}
+
+#bannerThird{
+    padding-left: 350px;
+    height:30px;
+    width:100%;
+    background: #e6e6e6;
+    border-bottom: 1px black solid;
+}
+
+#bannerThird a{
+    height:30px;
+    line-height: 30px;
+}
+
+#container{
+    width:1100px;
+    margin: 30px auto;
+    height:2100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*
+容器为1100*2100
+减去上下留下的空白和位置 一空是 1000*2000
+然后700给左边 250给右边 中间空个50
+2000 需要N个块的高+n个（最下面有一个）间距的高度
+margin 20 高度230 一页刚好 8个 然后
+*/
+
+#left{
+    display: inline-block;
+    height: 2100px;
+    width: 700px;
+    float: left;
+}
+
+#left p{
+    height: 30px;
+    line-height: 30px
+}
+
+.Item{
+    visibility: hidden;
+    -webkit-box-shadow:0 0 3px #c5c5c5;
+    -moz-box-shadow:0 0 3px #c5c5c5;
+    box-shadow:0 0 3px #c5c5c5;
+    border-radius: 5px;
+    background: white;
+    height:auto;
+    min-height:220px;
+    width: 700px;
+    margin-top: 30px;
+}
+
+.Item:hover{
+    -webkit-box-shadow:0 0 10px #c5c5c5;
+    -moz-box-shadow:0 0 15px #c5c5c5;
+    box-shadow:0 0 10px #c5c5c5;
+}
+
+.ItemTitle{
+    height: 60px;
+    width: 700px;
+    line-height: 70px;
+}
+
+.ItemTitle h2{
+    margin-left: 15px;
+}
+
+.ItemTitle h2 a{
+    color: black;
+    text-decoration:none
+}
+
+.ItemTitle h2 a:hover{
+    color: #ff5e5e;
+    cursor:pointer
+}
+
+.ItemInfo{
+    height: 30px;
+    width:700px;
+}
+
+.ItemInfo p{
+    color: #b5b0b0;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.ItemInfo a{
+    text-decoration:none;
+    color: #ff5e5e;
+}
+
+.ItemInfo a:hover{
+    cursor:pointer
+}
+
+.ItemIntro{
+    padding:15px;
+    height:auto;
+    min-height: 100px;
+    width:670px;
+}
+
+#paging{
+    height: 50px;
+    width:700px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#right{
+    float: left;
+    width:290px;
+    height:auto;
+    margin-left: 50px;
+}
+
+#newestComments{
+    width:250px;
+    height:auto;
+    padding :20px 20px;
+    -webkit-box-shadow:0 0 3px #c5c5c5;
+    -moz-box-shadow:0 0 3px #c5c5c5;
+    box-shadow:0 0 3px #c5c5c5;
+    border-radius: 5px;
+    background: white;
+    margin-top: 60px;
+}
+
+#newestComments a{
+    color: #000;
+    white-space:nowrap;
+    display: inline-block;
+    width: 250px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    height: 20px;
+    margin-top: 8px;
+    line-height: 20px;
+}
+
+#newestComments a:hover{
+    height:auto;
+    white-space: normal;
+}
+
+#typeCata{
+    width:250px;
+    height:auto;
+    padding :20px 20px;
+    -webkit-box-shadow:0 0 3px #c5c5c5;
+    -moz-box-shadow:0 0 3px #c5c5c5;
+    box-shadow:0 0 3px #c5c5c5;
+    border-radius: 5px;
+    background: white;
+    margin-top: 30px;
+}
+
+#typeCata a{
+    color: #000;
+    white-space:nowrap;
+    display: inline-block;
+    width: 250px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    height: 20px;
+    margin-top: 8px;
+    line-height: 20px;
+}
+
+#typeCata a:hover{
+    height:auto;
+    white-space: normal;
+}

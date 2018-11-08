@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册|李瑞崧的个人网站</title>
+    <link href="img/pig.ico" rel="shortcut icon">
+    <script src="Bomb/bmob-min.js"></script>
+
+    <script>
+
+
+
+                function sign() {
+
+
+            Bmob.initialize("ed4aedea541215a93b483fbe0e9c8bc3", "bcfdb82a2462b1e83a535b77ca8104ff");
+            var user = new Bmob.User();
+            var userName = document.getElementById("username").value;
+            var passWord = document.getElementById("password").value;
+            var authority = parseInt(document.getElementById("authority").value);
+            user.set("username", userName);
+            user.set("password", passWord);
+            user.set("authority", authority);
+
+            user.signUp(null, {
+                success: function (user) {
+                    alert("注册success");
+                },
+                error: function (user, error) {
+
+                    alert("Error: " + error.code + " " + error.message);
+                }
+            });
+
+        }
+    </script>
+</head>
+<body>
+username   <input type="text" id="username"/> <br>
+password   <input type="text" id="password"/> <br>
+authority   <input type="text" id="authority"/> <br>
+
+<input type="button" value="注册" id="SignUp" onclick="sign()"/>
+
+</body>
+</html>

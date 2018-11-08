@@ -1,0 +1,131 @@
+html,body,div,span,object,iframe,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+h1{
+    border:0;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+/*
+容器为1100*2100
+减去上下留下的空白和位置 一空是 1000*2000
+然后700给左边 250给右边 中间空个50
+2000 需要N个块的高+n个（最下面有一个）间距的高度
+margin 20 高度230 一页刚好 8个 然后
+*/
+#container{
+    height:auto;}
+
+#left{
+    display: inline-block;
+    height: auto;
+    width: 700px;
+    margin:0 auto;
+}
+
+#left p{
+    height: 30px;
+    line-height: 30px
+}
+
+.Item{
+    display: none;
+    -webkit-box-shadow:0 0 3px #c5c5c5;
+    -moz-box-shadow:0 0 3px #c5c5c5;
+    box-shadow:0 0 3px #c5c5c5;
+    border-radius: 5px;
+    background: white;
+    height:auto;
+    min-height: 220px;
+    width: 350px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Item:hover{
+    -webkit-box-shadow:0 0 10px #c5c5c5;
+    -moz-box-shadow:0 0 15px #c5c5c5;
+    box-shadow:0 0 10px #c5c5c5;
+}
+
+.ItemTitle{
+    height: 60px;
+    width: 350px;
+    line-height: 70px;
+}
+
+.ItemTitle h2{
+    margin-left: 15px;
+}
+
+.ItemTitle h2 a{
+    color: black;
+    text-decoration:none
+}
+
+.ItemTitle h2 a:hover{
+    color: #ff5e5e;
+    cursor:pointer
+}
+
+.ItemInfo{
+    height: 30px;
+    width:350px;
+}
+
+.ItemInfo p{
+    color: #b5b0b0;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.ItemInfo a{
+    text-decoration:none;
+    color: #ff5e5e;
+}
+
+.ItemInfo a:hover{
+    cursor:pointer
+}
+
+.ItemIntro{
+    padding:15px;
+    min-height: 100px;
+    height:auto;
+    width:335px;
+}
+
+#paging{
+    height: 50px;
+    width:700px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Title{
+    margin:30px auto;
+    width:350px;
+}
+
+#loadMore{
+    width:350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: block;
+}
+
+#q{
+    width:350px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+}
